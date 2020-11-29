@@ -12,7 +12,7 @@ public class ArrayDeque<T> extends AbstractDeque<T> {
         front = 0; //
         back = 1; //
         size = 0;
-    } // changes up to you, changes are super minor. Less than 5 lines.
+    }
 
     private static int increment(int i, int length) {
         if (i == length - 1) {
@@ -86,8 +86,6 @@ public class ArrayDeque<T> extends AbstractDeque<T> {
     }
 
     public String toString() {
-        // We use a StringBuilder since it concatenates strings more efficiently
-        // than using += in a loop
         StringBuilder output = new StringBuilder();
         if (size >= 0) {
             int counter = 0;
